@@ -3,3 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+
+}
+.container_main {
+    background: cornflowerblue;
+    padding-top: 44px;
+    width: 475px;
+    height: 550px;
+}
+.container_title {
+    display: flex;
+    background: red;
+    justify-content: center;
+    /* width: 342.5px;
+    height: 39px; */
+    gap: 12.5px;
+    h1{
+        font-size: 32px;
+        font-family: "Montserrat-Bold";
+    }
+}
+.container_descripcion {
+    background: blue;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+    h2{
+        width: 87px;
+        height: 27px;
+        font-size: 22px;
+        /* white-space: nowrap; */
+        font-family: "Montserrat-SemiBold";
+    }
+    p{
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+    }
+}
+
+
+.container_information {
+    background: violet;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div_email {
+    background: teal;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 415px;
+    height: 71px;
+    input{
+        width: 415px;
+        height: 44px;
+        font-size: 12px;
+        font-family: "Montserrat-Regular";
+        padding-left: 15px;
+    }
+    h3{
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+    }
+}
+.div_pwd {
+    background: turquoise;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 415px;
+    height: 71px;
+    input{
+        width: 415px;
+        height: 44px;
+        font-size: 12px;
+        font-family: "Montserrat-Regular";
+        padding-left: 15px;
+    }
+    h3{
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+    }
+}
+.container_record {
+    background: orange;
+}
+.div_button {
+    background: green;
+    display: flex;
+    justify-content: center;
+    button{
+        width: 415px;
+        height: 44px;
+        border-radius: 4px;
+    }
+    
+}
+.div_reset {
+    /* background: yellow; */
+}
+.special {
+    color: var(--color-1);
+    text-decoration: none;
+}
