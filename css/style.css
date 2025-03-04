@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 body{
-
+   background: #FEAF00;
+   margin-left: 489px;
+   margin-top: 30px;
 }
 .container_main {
-    background: cornflowerblue;
+    background: #FFFFFF;
     padding-top: 44px;
+    border-radius: 12px;
     width: 475px;
     height: 550px;
 }
 .container_title {
     display: flex;
-    background: red;
+    /* background: red; */
     justify-content: center;
     /* width: 342.5px;
     height: 39px; */
@@ -25,7 +28,7 @@ body{
     }
 }
 .container_descripcion {
-    background: blue;
+    /* background: blue; */
     margin-top: 41px;
     display: flex;
     flex-direction: column;
@@ -47,7 +50,7 @@ body{
 
 
 .container_information {
-    background: violet;
+    /* background: violet; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -56,7 +59,7 @@ body{
     gap: 20px;
 }
 .div_email {
-    background: teal;
+    /* background: teal; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -75,7 +78,7 @@ body{
     }
 }
 .div_pwd {
-    background: turquoise;
+    /* background: turquoise; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -94,14 +97,17 @@ body{
     }
 }
 .container_record {
-    background: orange;
+    /* background: orange; */
 }
 .div_button {
-    background: green;
+    /* background: green; */
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     button{
         width: 415px;
+        background: #FEAF00;
+        color: #FFFFFF;
         height: 44px;
         border-radius: 4px;
     }
@@ -109,8 +115,13 @@ body{
 }
 .div_reset {
     /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
 }
 .special {
-    color: var(--color-1);
-    text-decoration: none;
+    color: #FEAF00;
+    /* text-decoration: none; */
 }
