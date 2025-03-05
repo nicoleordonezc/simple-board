@@ -129,11 +129,12 @@ main{
 /********************Sección lista de estudiantes **************************/
 
 .section__topics {
-    padding: 21px;
+    
 }
 .article__top {
     display: flex;
     align-items: center;
+    padding: 21px;
 }
 
 .div__search{
@@ -159,4 +160,82 @@ input:focus {
     font-family:  "Montserrat-Regular";
     font-size: 14px;
     color: var(--color-11);
+}
+/*************** Tabla de esdudiantes *****************/
+
+.div__container {
+    width: 100%;
+    padding: 20px;
+    background: var(--color-12);
+}
+.div__header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.div__header h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    color: var(--color-3);
+}
+.button__add {
+    width: 15svw;
+    height: 6svh;
+    background-color: var(--color-1);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-5);
+}
+.button__add:hover {
+    background-color: var(--color-4);
+}
+#dialog__add_student{
+    margin: auto;
+}
+.dialog__header{
+    display: flex;
+    justify-content: flex-end;
+}
+.dialog__header > span{
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:#000;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+/* img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} */
+.td__actions {
+    display: flex;
+    gap: 10px;
+}
+.span__edit, .span__delete {
+    cursor: pointer;
+}
+.span__edit {
+    color: #f4a261;
+}
+.span__delete {
+    color: #e63946;
 }
