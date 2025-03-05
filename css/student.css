@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    display: flex;
+}
 .section__container {
     width: 30%;
     display: flex;
@@ -122,4 +125,38 @@
     font-size: 14px;
     color: var(--color-3);
     text-decoration: none;
+}
+/********************Sección lista de estudiantes **************************/
+
+.section__topics {
+    padding: 21px;
+}
+.article__top {
+    display: flex;
+    align-items: center;
+}
+
+.div__search{
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: var(--color-10);
+    width: 13svw;
+    height: 4svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60svw;
+    margin-right: 2svw;
+}
+input:focus {
+    outline: none;
+}
+.div__search input{
+    border: none;
+    width: auto;
+}
+.div__search input::placeholder{
+    font-family:  "Montserrat-Regular";
+    font-size: 14px;
+    color: var(--color-11);
 }
