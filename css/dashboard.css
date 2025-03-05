@@ -9,6 +9,7 @@ main{
 }
 .section__container {
     width: 30%;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,12 +85,7 @@ main{
 .div__section:nth-child(4){
     padding-left: 20px;
 }
-.div__section:nth-child(5){
 
-}
-.div__section:nth-child(6){
-
-}
 .div__section img :nth-child(1){
     width: 3svw;
 }
@@ -137,7 +133,6 @@ main{
 }
 .article__top {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -150,6 +145,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 60svw;
+    margin-right: 2svw;
+}
+input:focus {
+    outline: none;
 }
 .div__search input{
     border: none;
@@ -225,12 +225,6 @@ main{
     padding: 20px;
     gap: 10px;
 }
-.div__exc{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5px;
-}
 .div__payments strong{
     font-family: "Montserrat-Bold";
     font-size: 30px;
@@ -239,10 +233,13 @@ main{
     justify-content: flex-end;
     
 }
-.div__payments p{
+#payments > strong::before{
+    content: attr(data-format);
     font-family: "Montserrat-Bold";
     font-size: 18px;
     color: var(--color-3);
+    display: flex;
+    align-items: center;
 }
 .div__users{
     background: linear-gradient(140deg, var(--color-1), var(--color-4));
