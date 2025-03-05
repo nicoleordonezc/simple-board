@@ -101,7 +101,7 @@ body{
         font-size: 12px;
         font-family: "Montserrat-Regular";
         padding-left: 15px;
-        color: var(--color-14);
+        color: var(--color-3);
         border: 1px solid var(--color-10);
         border-radius: 4px;
         outline: none;
@@ -128,7 +128,7 @@ body{
         font-size: 12px;
         font-family: "Montserrat-Regular";
         padding-left: 15px;
-        color: var(--color-14);
+        color: var(--color-3);
         border: 1px solid var(--color-10);
         outline: none;
 
