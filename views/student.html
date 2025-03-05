@@ -52,7 +52,32 @@
     </section>
     <section>
         <h1>Students List</h1>
-        <label for="Agregar">ADD NEW STUDENT</label>
+        <button id="add__student">ADD NEW STUDENT</button>
+        <dialog id="dialog__add_student">
+            <div class="dialog__header">
+                <span id="dialog_close">X</span>
+            </div>
+            <div class="dialog__main">
+                <form id="form__student" action="?" method="post">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="emaiñ" name="email">
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="number" max="10" pattern="[0-9]" name="phone">
+                    </div>
+                    <div>
+                        <label>Enroll Number</label>
+                        <input type="number" name="enroll__number">
+                    </div>
+                </form>
+            </div>
+        </dialog>
     </section>
 </body>
 </html>
