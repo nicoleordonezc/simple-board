@@ -9,7 +9,7 @@ main{
 }
 .section__container {
     width: 30%;
-    height: 100svh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,6 +180,19 @@ input:focus {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.div__box-estudent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div__box-estudent img{
+    width: 3.7svw;
+}
+.div__box-estudent{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-2);
 }
 .div__box img{
     width: 2svw;
