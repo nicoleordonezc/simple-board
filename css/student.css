@@ -69,17 +69,17 @@ main{
     gap: 10px;
 }
 .div__section:nth-child(1){
-    background: var(--color-1);
-    border-radius: 4px;
-    width: 15svw;
-    height: 6svh;
-
+    
 }
 .div__section:nth-child(2){
     padding-left: 5px;
 }
 .div__section:nth-child(3){
     padding-left: 10px;
+    background: var(--color-1);
+    border-radius: 4px;
+    width: 15svw;
+    height: 6svh;
 }
 .div__section:nth-child(4){
     padding-left: 20px;
@@ -189,9 +189,16 @@ input:focus {
     font-family: "Montserrat-Medium";
     font-size: 14px;
     color: var(--color-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button__add:hover {
     background-color: var(--color-4);
+}
+.div__header img{
+    margin-left: 45svw;
+
 }
 #dialog__add_student{
     margin: auto;
@@ -210,22 +217,18 @@ table {
     border-collapse: collapse;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color:#000;
+    border-top-color:var(--color-10);
 }
 th, td {
-    border-bottom: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 th {
-    background-color: #f9f9f9;
-    font-weight: bold;
+    font-family: "Montserrat-SemiBold";
+    font-size: 12px;
+    color: var(--color-13);
 }
-/* img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-} */
+
 .td__actions {
     display: flex;
     gap: 10px;
