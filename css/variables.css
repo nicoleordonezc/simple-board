@@ -12,7 +12,9 @@
     --color-11: #C4C4C4; 
     --color-12: #F8F8F8; 
     --color-13: #ACACAC;
+    --color-14: #CDCDCD;
 }
+
 @font-face {
     font-family: "Montserrat-Bold";
     src: url(../storage/font/Montserrat/Montserrat-Bold.ttf);

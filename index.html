@@ -8,6 +8,42 @@
     <script src="js/main.js" defer type="module"></script>
 </head>
 <body>
-    
+    <dialog id="dialog_login">
+        <div class="dialog_header">
+            <span id="dialog_loginClose">X</span>
+        </div>
+        <div id="dialog_message" class="dialog_main"></div>
+        <div class="dialog_footer"></div>
+    </dialog>
+    <main class="container_main">
+        <form id="form_login" action="?" method="get">
+            <section class="container_title">
+                <img src="storage/img/Line.svg">
+                <h1>CRUD OPERATIONS</h1>
+            </section>
+            <section class="container_descripcion">
+                    <h2>SIGN IN</h2>
+                    <p>Enter your credentials to access your account</p>
+            </section>
+            <section class="container_information">
+                <div class="div_email">
+                    <h3>Email</h3>
+                    <input type="text" name="email" required placeholder="Enter your email"> 
+                </div>
+                <div class="div_pwd">
+                    <h3>Password</h3>
+                    <input type="password" name="password" required placeholder="Enter your password">
+                </div>
+            </section>
+            <section class="container_record">
+                <div class="div_button">
+                    <button>SIGN IN</button>
+                </div>
+                <div class="div_reset">
+                    <span>Forgot your password? <a class="special" href="#">Reset Password</a></span>
+                </div>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
