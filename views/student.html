@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,14 +60,17 @@
                 </div>
                 <a href="#"><img src="../storage/img/bell 1.svg"></a>
             </article>
-            <h1>Students List</h1>
-            <button id="add__student">ADD NEW STUDENT</button>
-            <dialog id="dialog__add_student">
-                <div class="dialog__header">
-                    <span id="dialog_close">X</span>
+            <div class="div__container">
+                <div class="div__header">
+                    <h2>Students List</h2>
+                    <button id="add__student" class="buttom__add">ADD NEW STUDENT</button>
                 </div>
-                <div class="dialog__main">
-                    <form id="form__student" action="?" method="post">
+                <dialog id="dialog__add_student">
+                    <div class="dialog__header">
+                        <span id="dialog_close">X</span>
+                    </div>
+                    <div class="dialog__main">
+                        <form id="form__student" action="?" method="post">
                         <div>
                             <label>Name</label>
                             <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+">
@@ -86,7 +89,27 @@
                         </div>
                     </form>
                 </div>
+                <div class="dialog__footer">
+                    <input type="submit" form="form__student" value="Guardar">
+                </div>
             </dialog>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Enroll Number</th>
+                        <th>Date of Admission</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table__student">
+
+                </tbody>
+            </table>
+        </div>
         </section>
     </main>
 </body>
