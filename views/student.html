@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+    <section class="section__container">
+        <header class="header__top">
+            <div class="div__head">
+                <img src="../storage/img/Line 1.svg">
+                <h1>CRUD OPERATIONS</h1>
+            </div>
+            <div class="div__profile">
+                <img src="#">
+                <strong>Karthi Madesh</strong>
+                <span>Admin</span>
+            </div>
+        </header>
+        <article class="article__container">
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Home</a>
+            </div>
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Course</a>
+            </div>
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Students</a>
+            </div>
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Payments</a>
+            </div>
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Report</a>
+            </div>
+            <div class="div__section">
+                <img src="#">
+                <a href="#">Settings</a>
+            </div>
+        </article>
+        <div class="div__bottom">
+            <a href="#">Logout</a>
+            <img src="#">
+        </div>
+    </section>
+    <section>
+        <h1>Students List</h1>
+        <button id="add__student">ADD NEW STUDENT</button>
+        <dialog id="dialog__add_student">
+            <div class="dialog__header">
+                <span id="dialog_close">X</span>
+            </div>
+            <div class="dialog__main">
+                <form id="form__student" action="?" method="post">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="emaiñ" name="email">
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="number" max="10" pattern="[0-9]" name="phone">
+                    </div>
+                    <div>
+                        <label>Enroll Number</label>
+                        <input type="number" name="enroll__number">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+</body>
+</html>
