@@ -142,8 +142,8 @@ main{
     border: 1px solid;
     border-radius: 5px;
     border-color: var(--color-10);
-    width: 13svw;
-    height: 4svh;
+    width: 15svw;
+    height: 6svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +165,7 @@ input:focus {
     font-size: 14px;
     color: var(--color-11);
 }
-*/*************** Tabla de esdudiantes *****************/*
+/*************** Tabla de esdudiantes *****************/
 
 .div__container {
     width: 100%;
@@ -176,7 +176,8 @@ input:focus {
 .div__header{
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    gap: 260px;
+    justify-content: space-evenly;
 }
 
 .div__header h2 {
@@ -184,27 +185,6 @@ input:focus {
     font-size: 22px;
     color: var(--color-3);
 }
-
-.button__add {
-    width: 15svw;
-    height: 6svh;
-    background-color: var(--color-1);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: "Montserrat-Medium";
-    font-size: 14px;
-    color: var(--color-5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button__add:hover {
-    background-color: var(--color-4);
-}
-
 .div__header img{
     margin-left: 45svw;
 }
