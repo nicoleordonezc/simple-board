@@ -126,3 +126,136 @@ main{
     color: var(--color-3);
     text-decoration: none;
 }
+/***********************************************/
+
+.section__topics {
+
+}
+
+.article__top {
+    display: flex;
+    align-items: center;
+    padding: 21px;
+}
+
+.div__search{
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: var(--color-10);
+    width: 13svw;
+    height: 4svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60svw;
+    margin-right: 2svw;
+}
+
+input:focus {
+    outline: none;
+}
+
+.div__search input{
+    border: none;
+    width: auto;
+}
+
+.div__search input::placeholder{
+    font-family:  "Montserrat-Regular";
+    font-size: 14px;
+    color: var(--color-11);
+}
+*/*************** Tabla de esdudiantes *****************/*
+
+.div__container {
+    width: 100%;
+    padding: 20px;
+    background: var(--color-12);
+}
+
+.div__header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div__header h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    color: var(--color-3);
+}
+
+.button__add {
+    width: 15svw;
+    height: 6svh;
+    background-color: var(--color-1);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__add:hover {
+    background-color: var(--color-4);
+}
+
+.div__header img{
+    margin-left: 45svw;
+}
+
+#dialog__add_student{
+    margin: auto;
+}
+
+.dialog__header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog__header > span{
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:var(--color-10);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-family: "Montserrat-SemiBold";
+    font-size: 12px;
+    color: var(--color-13);
+}
+
+.td__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.span__edit, .span__delete {
+    cursor: pointer;
+}
+
+.span__edit {
+    color: #f4a261;
+}
+
+.span__delete {
+    color: #e63946;
+}
