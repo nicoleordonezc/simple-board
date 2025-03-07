@@ -1,3 +1,4 @@
+import { deleteStudent } from "./handler.js";
 import {enableFromStudent} from "./handler.js";
 
 export const loadStudent = ()=>{
@@ -59,6 +60,8 @@ export const showRowsTable = (DB)=>{
         const spanDelete = document.createElement("span");
         spanDelete.classList.add("span__delete");
         spanDelete.textContent = "🗑️";
+        spanDelete.dataset.id_student = i;
+        spanDelete.addEventListener("click", deleteStudent)
 
         tdActions.append(spanEdit, spanDelete);
         tr.append(tdImage, tdName, tdEmail, tdPhone, tdEnrollNumber, tdDate_of_admission, tdActions);

@@ -18,3 +18,16 @@ export const enableFromStudent = (e)=>{
         input[i].value = infoStudent[input[i].name];
     }
 }
+
+export const deleteStudent = (e) => {
+    const span = e.target;
+    const DB = loadStudent();
+    const infoStudent = DB[span.dataset.id_student];
+    const input = form__student.querySelectorAll("input");
+    for (let i = 0; i < input.length; i++){
+        if(input[i].name == "id"){
+            infoStudent.table__student.remove();
+        }
+    }
+  };
+  
