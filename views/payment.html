@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
     <link rel="stylesheet" href="../css/payment.css">
+    <script src="../js/payment.js" defer type="module"></script>
 </head>
 <body>
     <main>
@@ -59,39 +60,24 @@
                 </div>
                 <a href="#"><img src="../storage/img/not.svg"></a>
             </article>
-            <div class="div__container">
-                <div class="div__header">
-                    <h2>Payment Details</h2>
-                    <img src="../storage/img/Vector.svg">
-                </div>
-                <dialog id="dialog__add_student">
-                    <div class="dialog__header">
-                        <span id="dialog_close">X</span>
+            <div class="div__main">
+                <div class="div__container">
+                    <div class="div__header">
+                        <h2>Payment Details</h2>
                     </div>
-                    <div class="dialog__main">
-                        <form id="form__student" action="?" method="post">
-                        <div>
-                            <label>Name</label>
-                            <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="emaiñ" name="email">
-                        </div>
-                        <div>
-                            <label>Phone</label>
-                            <input type="number" max="10" pattern="[0-9]" name="phone">
-                        </div>
-                        <div>
-                            <label>Enroll Number</label>
-                            <input type="number" name="enroll__number">
-                        </div>
-                    </form>
+                    <div class="div__button_filter">
+                        <button id="button__up" onclick="scrollPage('up')">
+                            <img src="../storage/img/up.svg">
+                        </button>
+                        <button id="button__down" onclick="scrollPage('down')">
+                            <img src="../storage/img/down.svg">
+                        </button>
+                    </div>
                 </div>
-                <div class="dialog__footer">
-                    <input type="submit" form="form__student" value="Guardar">
-                </div>
-                </dialog>
+            </div>   
+            <dialog>
+                
+            </dialog>
                 <table class="table">
                     <thead class="table__header">
                         <tr class="table__title">
@@ -138,7 +124,6 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
         </section>
     </main>
 </body>
