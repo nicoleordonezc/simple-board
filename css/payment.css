@@ -9,6 +9,7 @@ main{
 }
 .section__container {
     width: 30%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,19 +205,6 @@ input:focus {
     border: 1px solid #000;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color:var(--color-10);
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
 th {
     font-family: "Montserrat-SemiBold";
     font-size: 12px;
@@ -238,4 +226,41 @@ th {
 
 .span__delete {
     color: #e63946;
+}
+/*******************************************/
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-12);
+    border-radius: 8px;
+    overflow: hidden;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:var(--color-10);
+}
+.table__title  {
+    padding: 12px;
+    text-align: left;
+    
+}
+.table__content td{
+    padding: 12px;
+    text-align: left;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: var(--color-3);
+}
+.table__title th{
+    background: var(--color-12);
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+    font-family: "Montserrat-SemiBold";
+    font-size: 12px;
+    color: var(--color-13);
+}
+
+.table__content:nth-child(odd) {
+    background: var(--color-5);
 }
