@@ -1,4 +1,4 @@
-import { deleteStudent } from "./handler.js";
+import { enableFromStudentToDelete } from "./handler.js";
 import {enableFromStudent} from "./handler.js";
 
 export const loadStudent = ()=>{
@@ -46,25 +46,33 @@ export const showRowsTable = (DB)=>{
         tdEmail.textContent = DB[i].email;
         const tdPhone = document.createElement("td");
         tdPhone.textContent = DB[i].phone;
-        const tdEnrollNumber = document.createElement("td");
-        tdEnrollNumber.textContent = DB[i].enroll_number;
+        const tdEnrrollNumber = document.createElement("td");
+        tdEnrrollNumber.textContent = DB[i].enroll__number;
         const tdDate_of_admission = document.createElement("td");
         tdDate_of_admission.textContent = DB[i].date_of_admission;
         const tdActions = document.createElement("td");
-        const spanEdit = document.createElement("span");
+        const spanEdit = document.createElement("img");
         spanEdit.classList.add("span__edit");
-        spanEdit.textContent = "✏️";
+        spanEdit.src = "../storage/img/pen 1.svg";
+        spanEdit.style.width = "20px";
+        spanEdit.style.height = "20px";
+        spanEdit.style.borderRadius = "0";
+        spanEdit.style.marginRight = "20px"
         spanEdit.dataset.id_student = i;
         spanEdit.addEventListener("click", enableFromStudent)
 
-        const spanDelete = document.createElement("span");
+        const spanDelete = document.createElement("img");
         spanDelete.classList.add("span__delete");
-        spanDelete.textContent = "🗑️";
+        spanDelete.src = "../storage/img/trash 1.svg";
+        spanDelete.style.width = "20px";
+        spanDelete.style.height = "20px";
+        spanDelete.style.borderRadius = "0";
         spanDelete.dataset.id_student = i;
-        spanDelete.addEventListener("click", deleteStudent)
+        spanDelete.dataset.name_student = DB[i].name;
+        spanDelete.addEventListener("click", enableFromStudentToDelete)
 
         tdActions.append(spanEdit, spanDelete);
-        tr.append(tdImage, tdName, tdEmail, tdPhone, tdEnrollNumber, tdDate_of_admission, tdActions);
+        tr.append(tdImage, tdName, tdEmail, tdPhone, tdEnrrollNumber, tdDate_of_admission, tdActions);
         table__student.append(tr);
     }
 

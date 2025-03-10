@@ -63,7 +63,10 @@
             <div class="div__container">
                 <div class="div__header">
                     <h2>Students List</h2>
-                    <img src="../storage/img/sort 1.svg">
+                    <div class="div__orden" >
+                       <button id="button_up">up</button>
+                       <button id="button_down">down</button>
+                    </div>
                     <button id="add__student" class="button__add">ADD NEW STUDENT</button>
                 </div>
                 <dialog id="dialog__add_student" class="dialog__container">
@@ -128,6 +131,18 @@
                     </div>
                     <div class="dialog__footer">
                         <input type="submit" form="form__student_edit" value="Actualizar">
+                    </div>
+                </dialog>
+                <dialog id="dialog__student_delete" class="dialog__student_delete">
+                    <div class="dialog__main">
+                        <form id="form__student_delete" action="?" method="post" class="form__student_delete">
+                            <h2>Deseas eliminar la informacion del estudiante</h2>
+                            <input type="text" pattern="[0-9]+" name="id" hidden> <strong></strong>
+                        </form>
+                    </div>
+                    <div class="dialog__footer">
+                        <input type="submit" data-action="delete" form="form__student_delete" value="Yes">
+                        <input type="submit" data-action="close" form="form__student_delete" value="No">
                     </div>
                 </dialog>
                 <table>

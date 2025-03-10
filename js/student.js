@@ -7,8 +7,20 @@ const dialog__close = document.querySelector("#dialog__close");
 const dialog__close_edit = document.querySelector("#dialog__close_edit");
 const form__student = document.querySelector("#form__student");
 const form__student_edit = document.querySelector("#form__student_edit");
+const dialog__student_delete = document.querySelector("#dialog__student_delete")
+const form__student_delete = document.querySelector("#form__student_delete")
 const table__student = document.querySelector("#table__student")
 
+const button_up = document.querySelector("#button_up");
+const button_down = document.querySelector("#button_down")
+
+button_up.addEventListener("click", (e)=>{
+    const data =Object.fromEntries(new FormData(e.target));
+    const DB = loadStudent();
+    const up = DB(data.name);
+    up.sort();
+    
+})
 
 addEventListener("DOMContentLoaded", (e)=>{
     const DB = loadStudent();
@@ -37,4 +49,19 @@ form__student_edit.addEventListener("submit", (e)=>{
     console.log(response);
     form__student_edit.reset();
     
+})
+
+form__student_delete.addEventListener("submit", (e)=>{e.preventDefault();
+    const actions = e.submitter.dataset.action;
+    if (actions == "close") dialog__student_delete.close();
+    if (actions== "delete") {
+        const data =Object.fromEntries(new FormData(e.target));
+        const DB = loadStudent();
+        DB.splice(data.id, 1);
+        localStorage.setItem("students", JSON.stringify(DB));
+        table__student.innerHTML = "",
+        showRowsTable(DB);
+        form__student_delete.reset();
+        form__student_delete.close();
+    }
 })

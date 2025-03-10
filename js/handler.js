@@ -19,15 +19,12 @@ export const enableFromStudent = (e)=>{
     }
 }
 
-export const deleteStudent = (e) => {
-    const span = e.target;
-    const DB = loadStudent();
-    const infoStudent = DB[span.dataset.id_student];
-    const input = form__student.querySelectorAll("input");
-    for (let i = 0; i < input.length; i++){
-        if(input[i].name == "id"){
-            infoStudent.table__student.remove();
-        }
-    }
+export const enableFromStudentToDelete = (e) => {
+    const input = form__student_delete.querySelector("input[name = 'id']");
+    const strong = form__student_delete.querySelector("strong");
+    input.value = e.target.dataset.id_student;
+    strong.textContent = e.target.dataset.name_student;
+    dialog__student_delete.showModal()
+
   };
   

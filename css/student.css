@@ -299,7 +299,7 @@ dialog{
     margin-left: 45svw;
 
 }
-#dialog__add_student, #dialog__student_edit{
+#dialog__add_student, #dialog__student_edit, #dialog__student_delete{
     margin: auto;
 }
 .dialog__header{
@@ -355,3 +355,28 @@ th {
     align-items: center;
 }
 /*******************/
+.dialog__footer{
+    display: flex;
+    gap: 20px;
+}
+
+.dialog__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form__student_delete{
+    padding-top: 20%;
+}
+.form__student_delete h2{
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: var(--color-3);
+}
+.form__student_delete strong{
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    color: var(--color-3);
+}
